@@ -27,8 +27,21 @@ nav {
     width: 100%;
 }
 
+header{
+    display: flex;
+    padding: 3rem 10rem;
+    column-gap: 5rem;
+}
+#hero_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
+#photo{
+    border-radius: 30px;
+    box-shadow: 20px 20px 60px 1px rgba(0, 0, 0, 0.357);
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -45,18 +58,3 @@ nav ul li a {
     font-weight: bold;
 }
 
-header{
-    display: flex;
-    padding: 3rem 10rem;
-    column-gap: 5rem;
-}
-#hero_left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#photo{
-    border-radius: 30px;
-    box-shadow: 20px 20px 60px 1px rgba(0, 0, 0, 0.357);
-}
