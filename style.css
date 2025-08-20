@@ -25,6 +25,14 @@ nav {
     top: 0;
     z-index: 100;
 }
+nav h1 {
+    font-family: "Roboto";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
 
 nav ul {
     list-style: none;
@@ -55,6 +63,7 @@ header {
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    font-family: "Roboto";
 }
 
 #hero_right {
@@ -68,4 +77,44 @@ header {
     width: 500px;
     border-radius: 30px;
     box-shadow: 20px 20px 60px 1px rgba(0, 0, 0, 0.357);
+}
+#more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+#more p{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(106, 130, 239, 0.607));
+    padding: 0.5rem 2rem;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+#experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+.empty{
+    height: 50px;
+}
+#experience-section h1 {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+}
+
+#experience-section p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666;
 }
