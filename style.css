@@ -65,7 +65,7 @@ header {
 }
 
 #photo {
-    width: 300px;
+    width: 500px;
     border-radius: 30px;
     box-shadow: 20px 20px 60px 1px rgba(0, 0, 0, 0.357);
 }
