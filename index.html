@@ -7,52 +7,131 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
+  
     <nav>
       <h1>Gokul GS</h1>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+  
     <header>
       <div id="hero_left">
-        <div id="hero_1">
-          <h1>Hello, I'm Gokul G S</h1>
-          <p>
-            Mechanical Engineer with expertise in simulation, software
-            development, and cross-disciplinary R&D. Adept at leveraging
-            analytical tools and automation techniques to enhance system
-            performance. Eager to apply robust technical skills and
-            problem-solving abilities to drive innovation in robot programming
-            and design
-          </p>
-        </div>
-        <div id="hero_2"></div>
+        <h1>Hello, I'm <span style="color:#0077b6;">Gokul G S</span></h1>
+        <p>
+          Mechanical Engineer with expertise in simulation, software
+          development, and cross-disciplinary R&D. Adept at leveraging
+          analytical tools and automation techniques to enhance system
+          performance. Passionate about robotics, programming, and engineering
+          innovation.
+        </p>
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="resume.pdf" class="btn-outline" target="_blank">Download Resume</a>
       </div>
       <div id="hero_right">
-        <img
-          id="photo"
-          src="https://img.freepik.com/premium-photo/3d-character-male-cartoon-with-square-pattern-red-black-flanel-good-profile-picture_477250-9.jpg"
-          alt=""
-        />
+        <img id="photo" src="https://img.freepik.com/premium-photo/3d-character-male-cartoon-with-square-pattern-red-black-flanel-good-profile-picture_477250-9.jpg" alt="Profile Picture"/>
       </div>
     </header>
 
     <main>
-      <span id="more"><p>More</p></span>
-      <div class="empty"></div>
-      <div id="experience-section">
-        <h1>Experience</h1>
-        <section>
+  
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Mechanical Engineer passionate about combining traditional engineering with software and robotics. I enjoy solving real-world problems using computational tools, simulations, and automation.
+        </p>
+      </section>
 
-        </section>
-      </div>
+    
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>R&D Mechanical and Software Engineer | Indian Space Research Organisation</h3>
+          <span>June 2025 - August 2025</span>
+          <p>Worked on CAD modeling, FEA, and automation scripts. Designed test fixtures and optimized processes for manufacturing efficiency.</p>
+        </div>
+        <div class="card">
+          <h3>Graduate Engineering Trainee | Indian Space Research Organisation</h3>
+          <span>June 2024 - June 2025</span>
+          <p>Conducted CFD analysis on aero-structures and assisted in robotics research projects.</p>
+        </div>
+      </section>
+
+  
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="project-card">
+            <h3>ROS2 Robot Navigation</h3>
+            <p>Built a robot simulation using ROS2 and Nav2 stack with SLAM and obstacle avoidance.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>FEA Fixture Design</h3>
+            <p>Developed a dynamically equivalent vibration test fixture for aerospace applications.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Python Automation</h3>
+            <p>Created automation scripts for simulation workflows reducing manual effort by 40%.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </section>
+
+  
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>C++</li>
+          <li>ROS2</li>
+          <li>ANSYS</li>
+          <li>Nastran</li>
+          <li>SolidWorks</li>
+          <li>FEA</li>
+      
+        </ul>
+      </section>
+
+   
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>Bachelor of Technology -  Mechanical Engineering</h3>
+          <span>APJ Abdul Kalam Technological University, 2019 - 2023</span>
+          <p>CGPA - 8.3</p>
+        </div>
+      </section>
+
+   
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="socials">
+          <a href="https://github.com/">GitHub</a>
+          <a href="https://linkedin.com/in/gokulgs7">LinkedIn</a>
+          <a href="mailto:gsgokul.engg@gmail.com">Email</a>
+        </div>
+      </section>
     </main>
 
+    <footer>
+      <p>&copy; 2025 Gokul G S. All rights reserved.</p>
+    </footer>
   </body>
 </html>
