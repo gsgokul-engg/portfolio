@@ -48,6 +48,7 @@ nav ul li a {
 header{
     display: flex;
     padding: 3rem 10rem;
+    column-gap: 5rem;
 }
 #hero_left{
     display: flex;
