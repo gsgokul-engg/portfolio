@@ -154,7 +154,39 @@ section h2 {
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  max-height: 10rem;
+  text-overflow: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+
 }
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container ul{
+  list-style: none;
+}
+.company-image-container{
+  margin-right: 1rem;
+}
+.company-image{
+  width: 100px;
+  border-radius: 20px;
+}
+.view-toggle{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.view-toggle img {
+  width: 25px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
 
 .card:hover {
   transform: translateY(-5px);

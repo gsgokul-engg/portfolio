@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gokul G S | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-  
     <nav>
       <h1>Gokul GS</h1>
       <ul>
@@ -23,10 +25,9 @@
       </ul>
     </nav>
 
-  
     <header>
       <div id="hero_left">
-        <h1>Hello, I'm <span style="color:#0077b6;">Gokul G S</span></h1>
+        <h1>Hello, I'm <span style="color: #0077b6">Gokul G S</span></h1>
         <p>
           Mechanical Engineer with expertise in simulation, software
           development, and cross-disciplinary R&D. Adept at leveraging
@@ -34,86 +35,142 @@
           performance. Passionate about robotics, programming, and engineering
           innovation.
         </p>
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="resume.pdf" class="btn-outline" target="_blank">Download Resume</a>
+        <a href="resume.pdf" class="btn-outline" target="_blank"
+          >Download Resume</a
+        >
       </div>
       <div id="hero_right">
-        <img id="photo" src="https://img.freepik.com/premium-photo/3d-character-male-cartoon-with-square-pattern-red-black-flanel-good-profile-picture_477250-9.jpg" alt="Profile Picture"/>
+        <img
+          id="photo"
+          src="https://img.freepik.com/premium-photo/3d-character-male-cartoon-with-square-pattern-red-black-flanel-good-profile-picture_477250-9.jpg"
+          alt="Profile Picture"
+        />
       </div>
     </header>
 
     <main>
-  
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm a Mechanical Engineer passionate about combining traditional engineering with software and robotics. I enjoy solving real-world problems using computational tools, simulations, and automation.
+          I'm a Mechanical Engineer passionate about combining traditional
+          engineering with software and robotics. I enjoy solving real-world
+          problems using computational tools, simulations, and automation.
         </p>
       </section>
 
-    
       <section id="experience">
         <h2>Experience</h2>
         <div class="card">
-          <h3>R&D Mechanical and Software Engineer | Indian Space Research Organisation</h3>
-          <span>June 2025 - August 2025</span>
-          <p>Worked on CAD modeling, FEA, and automation scripts. Designed test fixtures and optimized processes for manufacturing efficiency.</p>
+          <div class="card-container">
+            <div class="experience-text-container">
+              <h3>
+                R&D Mechanical and Software Engineer | Indian Space Research
+                Organisation
+              </h3>
+              <span>June 2025 - August 2025</span>
+              <p>
+                Worked on CAD modeling, FEA, and automation scripts. Designed
+                test fixtures and optimized processes for manufacturing
+                efficiency.
+              </p>
+            </div>
+            <div class="company-image-container">
+              <img
+                class="company-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="view-toggle"><img class="drop-down-img" src="drop_down.png"></div>
         </div>
         <div class="card">
-          <h3>Graduate Engineering Trainee | Indian Space Research Organisation</h3>
-          <span>June 2024 - June 2025</span>
-          <p>Conducted CFD analysis on aero-structures and assisted in robotics research projects.</p>
+          <div class="card-container">
+            <div class="experience-text-container">
+              <h3>
+                Graduate Engineering Trainee | Indian Space Research
+                Organisation
+              </h3>
+              <span>June 2024 - June 2025</span>
+              <p>
+                <ul>
+                  <li>Designed a dynamically equivalent vibration test fixture for the Velocity Trimming Module (VTM) of a three-stage solid propellant launch vehicle. Since the original module is made of composite material and cannot undergo multiple tests, a metal fixture was developed to enable repeated testing. Used NASTRAN to match the frequency response and random response of the original module</li>
+                  <li> Developed a neural network model to predict deviations in aerospace hardware for design clearance with an accuracy of more than 99% and integrated it with a user-friendly GUI.
+                  </li>
+                  <li>Developed a Python-based algorithm utilizing object-oriented programming to compute the dynamic surface area of complex cast geometries in solid rocket propellant segments during flight for optimizing burn rates.</li>
+                  <li>Validated flight hardware by predicting microstrains using Finite Element Analysis in NASTRAN and correlating with test data from strain gauge sensors, achieving correlation coefficients of more than 0.96</li>
+                  <li>Designed mechanical components for a satellite damping system using SolidWorks, followed by structural and modal simulations in ANSYS, to ensure less than 5% deformation, and also ensuring its design integrity and performance</li>
+                  <li>Co-authored papers on the neural network surrogate model for aerospace hardware deviation prediction, published in the National Aerospace Manufacturing Seminar 2025, to be published in the International Journal for Numerical Methods in Engineering.</li>
+                  <li>Developed a web-based interface using Python and HTML for real-time execution of MATLAB scripts to run modal analysis with interactive input handling and output visualization.</li>
+                  <li> Prepared technical reports and presentations to communicate design proposals and key findings related to space launch vehicles.</li>
+                </ul>    
+              </p>
+            </div>
+            <div class="company-image-container">
+              <img
+                class="company-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
+                alt=""
+              />
+            </div>
+          </div>
+           <div class="view-toggle"><img class="drop-down-img" src="drop_down.png"></div>
         </div>
       </section>
 
-  
       <section id="projects">
         <h2>Projects</h2>
         <div class="grid">
           <div class="project-card">
             <h3>ROS2 Robot Navigation</h3>
-            <p>Built a robot simulation using ROS2 and Nav2 stack with SLAM and obstacle avoidance.</p>
+            <p>
+              Built a robot simulation using ROS2 and Nav2 stack with SLAM and
+              obstacle avoidance.
+            </p>
             <a href="#">View Project</a>
           </div>
           <div class="project-card">
             <h3>FEA Fixture Design</h3>
-            <p>Developed a dynamically equivalent vibration test fixture for aerospace applications.</p>
+            <p>
+              Developed a dynamically equivalent vibration test fixture for
+              aerospace applications.
+            </p>
             <a href="#">View Project</a>
           </div>
           <div class="project-card">
             <h3>Python Automation</h3>
-            <p>Created automation scripts for simulation workflows reducing manual effort by 40%.</p>
+            <p>
+              Created automation scripts for simulation workflows reducing
+              manual effort by 40%.
+            </p>
             <a href="#">View Project</a>
           </div>
         </div>
       </section>
 
-  
       <section id="skills">
         <h2>Skills</h2>
         <ul class="skills-list">
           <li>Python</li>
+          <li>SolidWorks</li>
+          <li>ANSYS</li>
+          <li>MATLAB</li>
+          <li>Nastran</li>
+          <li>FEA</li>
           <li>C++</li>
           <li>ROS2</li>
-          <li>ANSYS</li>
-          <li>Nastran</li>
-          <li>SolidWorks</li>
-          <li>FEA</li>
-      
         </ul>
       </section>
 
-   
       <section id="education">
         <h2>Education</h2>
         <div class="card">
-          <h3>Bachelor of Technology -  Mechanical Engineering</h3>
+          <h3>Bachelor of Technology - Mechanical Engineering</h3>
           <span>APJ Abdul Kalam Technological University, 2019 - 2023</span>
           <p>CGPA - 8.3</p>
         </div>
       </section>
 
-   
       <section id="contact">
         <h2>Contact</h2>
         <form>
@@ -134,4 +191,5 @@
       <p>&copy; 2025 Gokul G S. All rights reserved.</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
