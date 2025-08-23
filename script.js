@@ -1,11 +1,12 @@
+document.querySelectorAll(".drop-down").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const textContainer = toggle.closest(".card").querySelector(".exp-txt-cont");
+    const icon = toggle.querySelector("img");
 
-const btn = document.querySelector("#experience-section .view-toggle");
-const content = document.querySelector("#experience-section .collapsible");
+    // Toggle expanded/collapsed text
+    textContainer.classList.toggle("expanded");
 
-btn.addEventListener("click", () => {
-content.classList.toggle("expanded");
-btn.textContent = content.classList.contains("expanded")
-    ? "View Less"
-    : "View More";
+    // Rotate arrow
+    icon.classList.toggle("rotate");
+  });
 });
-
