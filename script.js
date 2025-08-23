@@ -3,10 +3,18 @@ document.querySelectorAll(".drop-down").forEach((toggle) => {
     const textContainer = toggle.closest(".card").querySelector(".exp-txt-cont");
     const icon = toggle.querySelector("img");
 
-    // Toggle expanded/collapsed text
+    
     textContainer.classList.toggle("expanded");
 
-    // Rotate arrow
     icon.classList.toggle("rotate");
   });
 });
+
+
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector("nav ul");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("open");
+  });

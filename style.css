@@ -18,7 +18,7 @@ body {
   );
 }
 
-/* NAVBAR */
+
 nav {
   background-color: #ffffff5a;
   box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.073);
@@ -31,6 +31,36 @@ nav {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile nav links */
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
 }
 
 nav h1 {
@@ -332,7 +362,7 @@ section h2 {
   );
 }
 
-/* CONTACT */
+
 form {
   display: flex;
   flex-direction: column;
@@ -388,4 +418,132 @@ footer {
   padding: 1.5rem;
   margin-top: 3rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  header {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero_left h1 {
+    font-size: 2rem;
+  }
+
+  #hero_right img {
+    width: 250px;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-image {
+    margin-top: 1rem;
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff84;
+    width: 220px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius:0 0 0 20px ;
+    backdrop-filter: blur(10px);
+    display: none; 
+  }
+
+  nav ul.show {
+    display: flex;
+   
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    
+
+  }
+
+  header {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  #hero_left h1 {
+    font-size: 1.8rem;
+  }
+
+  #photo {
+    width: 200px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .skills-list {
+    gap: 0.5rem;
+  }
+
+  .skills-list li {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  form {
+    padding: 0 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
 }
