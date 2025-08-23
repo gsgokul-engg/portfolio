@@ -203,7 +203,7 @@ section h2 {
 }
 
 .exp-txt-cont {
-  max-height: 12rem;         
+  max-height: 10rem;         
   overflow: hidden;
   position: relative;
   transition: max-height 0.5s ease;
