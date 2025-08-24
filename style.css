@@ -25,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 5rem;
+  padding: 1.5rem 3rem;
   width: 100%;
   position: sticky;
   top: 0;
@@ -33,12 +33,7 @@ nav {
   backdrop-filter: blur(10px);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+
 
 
 .hamburger {
@@ -56,7 +51,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Mobile nav links */
+
 nav ul {
   display: flex;
   gap: 1.5rem;
@@ -88,7 +83,7 @@ nav ul li a:hover {
   color: #6a82ef;
 }
 
-/* HERO */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -292,7 +287,7 @@ section h2 {
 }
 
 .card.expanded {
-  height: 1000px;
+  height: auto;
   white-space: normal;
 }
 
@@ -546,11 +541,11 @@ footer {
 
 
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
