@@ -355,7 +355,6 @@ section h2 {
   font-weight: 600;
   color: #333;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
