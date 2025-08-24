@@ -37,7 +37,10 @@ nav {
 }
 
 
-
+nav a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .hamburger {
   display: none;
