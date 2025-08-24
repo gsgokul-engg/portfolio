@@ -240,7 +240,9 @@ section h2 {
   max-height: 0rem;         
   overflow: hidden;
   position: relative;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.6s ease;
+
+
 }
 
 .exp-txt-cont::after {
@@ -255,9 +257,9 @@ section h2 {
   transition: opacity 0.3s ease;
 }
 
-.exp-txt-cont.expanded {
-  max-height: fit-content; 
+.exp-txt-cont.open{
   white-space: normal;
+
 }
 .exp-txt-cont.expanded::after {
   opacity: 0;   
@@ -295,6 +297,7 @@ section h2 {
 .card.expanded {
   height: auto;
   white-space: normal;
+
 }
 
 
