@@ -270,6 +270,12 @@ section h2 {
   
   text-wrap: wrap;
 }
+.exp-txt-cont li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; 
+  margin-bottom: 12px;
+}
 
 .exp-txt-cont ul {
   display: flex;
@@ -421,7 +427,7 @@ form button:hover {
   color: #4a60c7;
 }
 
-/* FOOTER */
+
 footer {
   background: #333;
   color: #fff;
@@ -528,6 +534,10 @@ footer {
   .card {
     padding: 1rem;
   }
+  .card h3 {
+   text-wrap: wrap;
+}
+
 
   .skills-list {
     gap: 0.5rem;
