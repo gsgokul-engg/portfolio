@@ -57,30 +57,37 @@ document.querySelectorAll(".drop-down").forEach((btn) => {
 
 
 
-const form = document.getElementById("enquiryForm");
+ const form = document.getElementById("enquiryForm");
   const msg = document.getElementById("formMsg");
 
   form.addEventListener("submit", function(event) {
-    event.preventDefault(); // stop default form action
+    event.preventDefault(); 
 
     const data = new FormData(form);
 
-    fetch(form.action, {
-      method: form.method,
+    fetch("https://formsubmit.co/gsgokul093@gmail.com", {
+      method: "POST",
       body: data,
-      headers: { 'Accept': 'application/json' }
-    }).then(response => {
+      headers: { "Accept": "application/json" }
+    })
+    .then(response => {
       if (response.ok) {
-        msg.style.display = "block";   // show success message
-        form.reset();                  // clear form
+        msg.textContent = "✅ Your message has been sent successfully!";
+        msg.style.color = "green";
+        msg.style.display = "flex";
+        msg.style.justifyContent = "center";
+        form.reset(); 
       } else {
-        msg.style.color = "red";
         msg.textContent = "❌ Something went wrong. Please try again.";
-        msg.style.display = "block";
+        msg.style.color = "red";
+        msg.style.display = "flex";
+        msg.style.justifyContent = "center";
       }
-    }).catch(() => {
-      msg.style.color = "red";
+    })
+    .catch(() => {
       msg.textContent = "⚠️ Network error. Please try again.";
-      msg.style.display = "block";
+      msg.style.color = "red";
+      msg.style.display = "flex";
+      msg.style.justifyContent = "center";
     });
   });
