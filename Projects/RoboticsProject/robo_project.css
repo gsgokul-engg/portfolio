@@ -36,11 +36,11 @@ nav {
     z-index: 100;
     backdrop-filter: blur(10px);
     font-size: 1.2rem;
-    background: rgba(188, 203, 246, 0.224) 
-                url("https://img.freepik.com/premium-photo/combination-mechanical-textures-atmospheric-tones-generative-ai_212944-25788.jpg");
+    background: rgba(40, 43, 52, 0.224) 
+                url("https://i.pinimg.com/474x/22/ac/09/22ac0922197d7d9216bab5a159563de4.jpg");
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     color: rgb(245, 255, 255);
     font-size: 2rem
 }
