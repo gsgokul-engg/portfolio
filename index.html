@@ -238,19 +238,29 @@
         <h2>Projects</h2>
         <div class="grid">
           <div class="project-card">
-            <h3>Boston Spot Robot - Solidworks</h3>
+            <h3>Mars Rover Simulation with ROS2</h3>
             <p>
-              CAD modeling of Boston Dynamics Spot Robot using Solidworks,
-              focusing on mechanical design and assembly.
+              Developing a simulation environment for a Mars rover using ROS2,
+              focusing on navigation, obstacle avoidance, and terrain mapping.
             </p>
+            <button id="project-button" onclick="openPopup('marsrover')">
+              View Project
+            </button>
+          </div>
+          <div class="project-card">
+              <h3>Boston Spot Robot - Solidworks</h3>
+              <p>
+                CAD modeling of Boston Dynamics Spot Robot using Solidworks,
+                focusing on mechanical design and assembly.
+              </p>
             <button id="project-button" onclick="openPopup('bostonspot')">
               View Project
             </button>
           </div>
 
           <div class="project-card">
-            <h3> Autonomous Mobile Robot Simulation | ROS2, Gazebo, RViz</h3>
-            <p></p>
+            <h3>Autonomous Mobile Robot Simulation | ROS2, Gazebo, RViz</h3>
+            <p>
               Developed a simulation environment for an autonomous mobile robot
               using ROS2, Gazebo, and RViz, focusing on navigation and obstacle
               avoidance.
@@ -263,15 +273,17 @@
 
         <div class="grid">
           <div class="project-card">
-            <h3>Software</h3>
-            <p>
-              Automation scripts, workflow optimization, and simulation tool
-              integration.
-            </p>
-            <button id="project-button" onclick="openPopup()">
+              <h3>Amazon Clone - Website</h3>
+              <p>
+                Created a functional Amazon clone website using HTML, CSS, and
+                JavaScript, featuring product listings, a shopping cart, and
+                user authentication.
+              </p>
+            <button id="project-button" onclick="openPopup('amazonclone')">
               View Project
             </button>
           </div>
+          
           <div class="project-card">
             <h3>Coming Soon</h3>
             <p>
@@ -280,6 +292,37 @@
           </div>
         </div>
 
+        <!-- Mars Rover Project Popup -->
+        <div id="marsrover" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('marsrover')"
+            >&times;</span
+          >
+          <div class="project">
+            <div class="scroll-area">
+              <div class="project-content">
+                <h3>Mars Rover Simulation with ROS2</h3>
+                <img
+                  class="project-img"
+                  src="https://media.licdn.com/dms/image/v2/D5622AQHAFDVsMwGVwg/feedshare-shrink_800/feedshare-shrink_800/0/1695318807833?e=2147483647&v=beta&t=KkUUYwkaZJVXTmn7HZFNxecEHfUluKhR2v2kB6p4cpg"
+                  alt=""
+                />
+                <p class="fig-label">Conceptual Model</p>
+              
+                  <ul class="project-para">
+                    <li>Mechanical Design & Simulation: Designed a multi-functional rover and a dexterous robotic arm in SolidWorks, focusing on modularity and realistic joint constraints. Exported the design to URDF (Unified Robot Description Format) to enable visualization, kinematic validation, and simulation in ROS2 environments.</li>
+                    <li>Multi-Sensor Integration: Integrated simulated LiDAR, RGB camera, and IR sensors to enable the rover to perceive complex terrain and detect objects in real-time. Developed sensor models and plugin configurations in Gazebo to replicate real-world behavior, allowing for accurate testing of navigation and manipulation algorithms.</li>
+
+                    <li>Robotic Manipulation: Implemented MoveIt for motion planning and control of the robotic arm. Enabled tasks such as pick-and-place, object manipulation, and trajectory planning, with collision avoidance and joint limit enforcement in a simulated environment.</li>
+                    <li>Autonomous Navigation: Developed autonomous navigation capabilities using the Nav2 Stack, including path planning, obstacle avoidance, and localization over rough, Mars-like terrain. Leveraged satellite-inspired positioning techniques and OpenCV for terrain mapping and object recognition.</li>
+                    <li>Simulation & Testing: Utilized Gazebo for realistic physics-based simulation, enabling iterative testing of sensor perception, arm manipulation, and rover locomotion in diverse scenarios. Conducted computer vision processing pipelines to interpret camera and LiDAR data for real-time decision-making.</li>
+                    <li>Key Skills & Tools: SolidWorks, ROS2, URDF, MoveIt, Nav2 Stack, Gazebo, OpenCV, LiDAR and camera sensor simulation, autonomous navigation, robotic arm control, multi-sensor fusion, terrain perception.</li>
+                  </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
         <!-- Boston Spot Robot Project Popup -->
         <div id="bostonspot" class="popupWindow">
           <span class="close-btn" onclick="closePopup('bostonspot')"
@@ -295,12 +338,23 @@
                   alt=""
                 />
                 <p>
-                      In my recent project, I created a highly detailed model of the Spot Robot by Boston Dynamics using SolidWorks. By incorporating advanced mating conditions, I achieved a 16% improvement in the robot's motion, ensuring smooth and realistic movement. Additionally, I included complex design elements that enhanced the overall design quality by 40%, showcasing my expertise in mechanical engineering and industrial design. This project demonstrates my ability to apply innovative solutions to improve both functionality and aesthetics in robotic design.
+                  In my recent project, I created a highly detailed model of the
+                  Spot Robot by Boston Dynamics using SolidWorks. By
+                  incorporating advanced mating conditions, I achieved a 16%
+                  improvement in the robot's motion, ensuring smooth and
+                  realistic movement. Additionally, I included complex design
+                  elements that enhanced the overall design quality by 40%,
+                  showcasing my expertise in mechanical engineering and
+                  industrial design. This project demonstrates my ability to
+                  apply innovative solutions to improve both functionality and
+                  aesthetics in robotic design.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Mobile Robot Project Popup -->
         <div id="mobilerobot" class="popupWindow">
           <span class="close-btn" onclick="closePopup('mobilerobot')"
             >&times;</span
@@ -309,17 +363,59 @@
             <div class="scroll-area">
               <div class="project-content">
                 <h3>Autonomous Mobile Robot - ROS2, Gazebo, RViz</h3>
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361953301212356609?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post" class="project-img"></iframe>
+                <iframe
+                  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361953301212356609?compact=1"
+                  height="399"
+                  width="504"
+                  frameborder="0"
+                  allowfullscreen=""
+                  title="Embedded post"
+                  class="project-img"
+                ></iframe>
                 <p>
                   In this project, I developed a comprehensive simulation
-                  environment for an autonomous mobile robot using ROS2,
-                  Gazebo, and RViz. The focus was on implementing advanced
-                  navigation algorithms and obstacle avoidance techniques to
-                  ensure the robot could operate effectively in dynamic
-                  environments. By integrating these tools, I was able to create
-                  a realistic simulation that allowed for extensive testing and
-                  optimization of the robot's performance, demonstrating my
-                  skills in robotics and software development.
+                  environment for an autonomous mobile robot using ROS2, Gazebo,
+                  and RViz. The focus was on implementing advanced navigation
+                  algorithms and obstacle avoidance techniques to ensure the
+                  robot could operate effectively in dynamic environments. By
+                  integrating these tools, I was able to create a realistic
+                  simulation that allowed for extensive testing and optimization
+                  of the robot's performance, demonstrating my skills in
+                  robotics and software development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amazon Clone Project Popup -->
+         <div id="amazonclone" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('amazonclone')"
+            >&times;</span
+          >
+          <div class="project">
+            <div class="scroll-area">
+              <div class="project-content">
+                <h3>Autonomous Mobile Robot - ROS2, Gazebo, RViz</h3>
+                <iframe
+                  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361953301212356609?compact=1"
+                  height="399"
+                  width="504"
+                  frameborder="0"
+                  allowfullscreen=""
+                  title="Embedded post"
+                  class="project-img"
+                ></iframe>
+                <p>
+                  In this project, I developed a comprehensive simulation
+                  environment for an autonomous mobile robot using ROS2, Gazebo,
+                  and RViz. The focus was on implementing advanced navigation
+                  algorithms and obstacle avoidance techniques to ensure the
+                  robot could operate effectively in dynamic environments. By
+                  integrating these tools, I was able to create a realistic
+                  simulation that allowed for extensive testing and optimization
+                  of the robot's performance, demonstrating my skills in
+                  robotics and software development.
                 </p>
               </div>
             </div>
@@ -408,7 +504,8 @@
       </section>
       <section id="education">
         <h2>Education</h2>
-        <div class="card">
+        <div class="grid">
+          <div class="card">
           <h3>Bachelor of Technology - Mechanical Engineering</h3>
           <span>APJ Abdul Kalam Technological University, 2019 - 2023</span>
           <p class="gpa">CGPA - 8.3</p>
@@ -417,6 +514,7 @@
           <h3>High-School</h3>
           <span>NSS Public School, 2017 - 2019</span>
           <p class="gpa">CGPA - 7.6</p>
+        </div>
         </div>
       </section>
 
