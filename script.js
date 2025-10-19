@@ -93,11 +93,11 @@ document.querySelectorAll(".drop-down").forEach((btn) => {
   });
 
 
- function openPopup() {
-      document.getElementById('projectWindow').style.display = 'flex';
+ function openPopup(id) {
+      document.getElementById(id).style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
-    function closePopup() {
-      document.getElementById('projectWindow').style.display = 'none';
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
       document.body.style.overflow = 'auto';
     }

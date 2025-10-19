@@ -369,11 +369,29 @@ section p{
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   width: 80%;
+  height: 80%;
+  overflow: hidden;
+
+}
+
+.scroll-area {
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .project-content {
-  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
+
 }
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
 
 #project-button {
   margin-top: 15px;
@@ -387,17 +405,25 @@ section p{
 
 .close-btn {
   position: absolute;
-  top: 0px;
-  right: 12px;
-  font-size: 50px;
-  font-weight: 300px;
-  color: #555;
+  top: 4%;
+  right: 6%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
   cursor: pointer;
-  transition: color 0.2s ease;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;              
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .close-btn:hover {
-  color: #000;
+  color: #ff0202;
 }
 
 

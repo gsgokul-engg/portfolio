@@ -15,11 +15,11 @@
   <body>
     <nav>
       <a href="#home"><h1>Gokul G S</h1></a>
-       <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -31,219 +31,381 @@
     </nav>
     <section id="home">
       <header>
-      <div id="hero_left">
-        <h1>Hello, I'm <span style="color: #0077b6">Gokul</span></h1>
-        <p>
-          Mechanical Engineer with expertise in simulation, software
-          development, and cross-disciplinary R&D. Adept at leveraging
-          analytical tools and automation techniques to enhance system
-          performance. Passionate about robotics, programming, and engineering
-          innovation.
-        </p>
-        <a href="resume.pdf" class="btn-outline" target="_blank"
-          >Download CV</a
-        >
-      </div>
-      <div id="hero_right">
-        <img
-          id="photo"
-          src="images/photo.jpg"
-          alt="Profile Picture"
-        />
-      </div>
-    </header>
+        <div id="hero_left">
+          <h1>Hello, I'm <span style="color: #0077b6">Gokul</span></h1>
+          <p>
+            Mechanical Engineer with expertise in simulation, software
+            development, and cross-disciplinary R&D. Adept at leveraging
+            analytical tools and automation techniques to enhance system
+            performance. Passionate about robotics, programming, and engineering
+            innovation.
+          </p>
+          <a href="resume.pdf" class="btn-outline" target="_blank"
+            >Download CV</a
+          >
+        </div>
+        <div id="hero_right">
+          <img id="photo" src="images/photo.jpg" alt="Profile Picture" />
+        </div>
+      </header>
     </section>
-    
 
     <main>
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm a Mechanical Engineer passionate about combining traditional engineering with software and robotics. I enjoy solving real-world problems using computational tools, simulations, and automation.
+          I'm a Mechanical Engineer passionate about combining traditional
+          engineering with software and robotics. I enjoy solving real-world
+          problems using computational tools, simulations, and automation.
         </p>
       </section>
 
       <section id="experience">
         <h2>Experience</h2>
-        
+
         <div class="card">
           <div class="card-container">
             <div class="card-header">
               <div>
-                <h3>R&D Mechanical and Software Engineer (Contractual) | Indian Space Research Organisation</h3>
-            <span>June 2025 - Present</span>
+                <h3>
+                  R&D Mechanical and Software Engineer (Contractual) | Indian
+                  Space Research Organisation
+                </h3>
+                <span>June 2025 - Present</span>
               </div>
-            <div class="comp-logo">
-               <img
-                class="company-image"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
-                alt="ISRO Logo"
-              />
-            </div>
+              <div class="comp-logo">
+                <img
+                  class="company-image"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
+                  alt="ISRO Logo"
+                />
+              </div>
             </div>
             <div class="exp-txt-cont">
-            
               <ul>
                 <li>
-                  Developed a standalone MATLAB app for operational modal analysis, offering multiple methods to facilitate spacecraft structural performance evaluation, with streamlined data input, processing, visualization, and increasing workflow efficiency by 20%. 
+                  Developed a standalone MATLAB app for operational modal
+                  analysis, offering multiple methods to facilitate spacecraft
+                  structural performance evaluation, with streamlined data
+                  input, processing, visualization, and increasing workflow
+                  efficiency by 20%.
                 </li>
                 <li>
-                 Performed static structural evaluation of the metallic vibration test fixture for the Velocity Trimming Module (VTM) using ANSYS and MSC NASTRAN, validating stress distribution and deformation with a margin of safety of 1.27 under operational loading conditions to ensure structural integrity. 
+                  Performed static structural evaluation of the metallic
+                  vibration test fixture for the Velocity Trimming Module (VTM)
+                  using ANSYS and MSC NASTRAN, validating stress distribution
+                  and deformation with a margin of safety of 1.27 under
+                  operational loading conditions to ensure structural integrity.
                 </li>
                 <li>
-                 Conducted dimensional deviation study of the SITVC (Secondary Injection Thrust Vector Control) port in a solid rocket motor nozzle under minimum wall thickness conditions using ANSYS and MSC Nastran, analyzing stress concentrations near welds to evaluate structural integrity and improve design reliability. 
+                  Conducted dimensional deviation study of the SITVC (Secondary
+                  Injection Thrust Vector Control) port in a solid rocket motor
+                  nozzle under minimum wall thickness conditions using ANSYS and
+                  MSC Nastran, analyzing stress concentrations near welds to
+                  evaluate structural integrity and improve design reliability.
+                </li>
+                <li>
+                  Developed a Python-based automation tool to process CMM
+                  (Coordinate Measuring Machine) and thickness data, generating
+                  3D coordinate maps of weld areas in motor cases, enabling
+                  precise inner/outer diameter profile extraction for FEM
+                  analysis in ANSYS.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="drop-down">
+            <img class="toggle-img" src="drop_down.png" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <div>
+                <h3>
+                  Graduate Engineering Trainee | Indian Space Research
+                  Organisation
+                </h3>
+                <span>June 2024 - June 2025</span>
+              </div>
+              <div class="comp-logo">
+                <img
+                  class="company-image"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
+                  alt="ISRO Logo"
+                />
+              </div>
+            </div>
+            <div class="exp-txt-cont">
+              <ul>
+                <li>
+                  Designed a dynamically equivalent vibration test fixture for
+                  the Velocity Trimming Module (VTM) of a three-stage solid
+                  propellant launch vehicle. Since the original module is made
+                  of composite material and cannot undergo multiple tests, a
+                  metal fixture was developed to enable repeated testing. Used
+                  NASTRAN to match the frequency response and random response of
+                  the original module
+                </li>
+                <li>
+                  Developed a neural network model to predict deviations in
+                  aerospace hardware for design clearance with an accuracy of
+                  more than 99% and integrated it with a user-friendly GUI.
+                </li>
+                <li>
+                  Developed a Python-based algorithm utilizing object-oriented
+                  programming to compute the dynamic surface area of complex
+                  cast geometries in solid rocket propellant segments during
+                  flight for optimizing burn rates.
+                </li>
+                <li>
+                  Validated flight hardware by predicting microstrains using
+                  Finite Element Analysis in NASTRAN and correlating with test
+                  data from strain gauge sensors, achieving correlation
+                  coefficients of more than 0.96
+                </li>
+                <li>
+                  Designed mechanical components for a satellite damping system
+                  using SolidWorks, followed by structural and modal simulations
+                  in ANSYS, to ensure less than 5% deformation, and also
+                  ensuring its design integrity and performance
+                </li>
+                <li>
+                  Co-authored papers on the neural network surrogate model for
+                  aerospace hardware deviation prediction, published in the
+                  National Aerospace Manufacturing Seminar 2025, to be published
+                  in the International Journal for Numerical Methods in
+                  Engineering.
+                </li>
+                <li>
+                  Developed a web-based interface using Python and HTML for
+                  real-time execution of MATLAB scripts to run modal analysis
+                  with interactive input handling and output visualization.
+                </li>
+                <li>
+                  Prepared technical reports and presentations to communicate
+                  design proposals and key findings related to space launch
+                  vehicles.
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="drop-down">
+            <img class="toggle-img" src="drop_down.png" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <div>
+                <h3>Intern | Kerala Automobiles Limited</h3>
+                <span>March 2022 - April 2025</span>
+              </div>
+              <div class="comp-logo">
+                <img
+                  class="company-image"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3a/KAL_Logo.png"
+                  alt="KAL Logo"
+                />
+              </div>
+            </div>
+            <div class="exp-txt-cont">
+              <ul>
+                <li>
+                  Acquired knowledge about powertrain, battery pack, and
+                  electric motor.
                 </li>
-              <li>
-                 Developed a Python-based automation tool to process CMM (Coordinate Measuring Machine) and thickness data, generating 3D coordinate maps of weld areas in motor cases, enabling precise inner/outer diameter profile extraction for FEM analysis in ANSYS. 
-              </li>
-            </ul>
+                <li>
+                  Familiarity with EDM and CNC machines and their applications
+                  in manufacturing
+                </li>
+                <li>
+                  Familiarity with different fabrication machines used in the
+                  automotive industry
+                </li>
+              </ul>
             </div>
-            
           </div>
-          <div class="drop-down"><img class="toggle-img"  src="drop_down.png"></div>
-        </div>
-        <div class="card">
-          <div class="card-container">
-           <div class="card-header">
-              <div>
-                <h3>
-                Graduate Engineering Trainee | Indian Space Research
-                Organisation
-              </h3>
-            <span>June 2024 - June 2025</span>
-              </div>
-            <div class="comp-logo">
-               <img
-                class="company-image"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png"
-                alt="ISRO Logo"
-              />
-            </div>
-            </div>
-            <div class="exp-txt-cont">
-                <ul>
-                  <li>Designed a dynamically equivalent vibration test fixture for the Velocity Trimming Module (VTM) of a three-stage solid propellant launch vehicle. Since the original module is made of composite material and cannot undergo multiple tests, a metal fixture was developed to enable repeated testing. Used NASTRAN to match the frequency response and random response of the original module</li>
-                  <li> Developed a neural network model to predict deviations in aerospace hardware for design clearance with an accuracy of more than 99% and integrated it with a user-friendly GUI.
-                  </li>
-                  <li>Developed a Python-based algorithm utilizing object-oriented programming to compute the dynamic surface area of complex cast geometries in solid rocket propellant segments during flight for optimizing burn rates.</li>
-                  <li>Validated flight hardware by predicting microstrains using Finite Element Analysis in NASTRAN and correlating with test data from strain gauge sensors, achieving correlation coefficients of more than 0.96</li>
-                  <li>Designed mechanical components for a satellite damping system using SolidWorks, followed by structural and modal simulations in ANSYS, to ensure less than 5% deformation, and also ensuring its design integrity and performance</li>
-                  <li>Co-authored papers on the neural network surrogate model for aerospace hardware deviation prediction, published in the National Aerospace Manufacturing Seminar 2025, to be published in the International Journal for Numerical Methods in Engineering.</li>
-                  <li>Developed a web-based interface using Python and HTML for real-time execution of MATLAB scripts to run modal analysis with interactive input handling and output visualization.</li>
-                  <li> Prepared technical reports and presentations to communicate design proposals and key findings related to space launch vehicles.</li>
-                </ul>    
-              
-            </div>
-            
+
+          <div class="drop-down">
+            <img class="toggle-img" src="drop_down.png" />
           </div>
-          
-          <div class="drop-down"><img class="toggle-img"  src="drop_down.png"></div>
-        </div>
-        <div class="card">
-          <div class="card-container">
-           <div class="card-header">
-              <div>
-                <h3>
-                Intern | Kerala Automobiles Limited 
-              </h3>
-            <span>March 2022 - April 2025</span>
-              </div>
-            <div class="comp-logo">
-               <img
-                class="company-image"
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3a/KAL_Logo.png"
-                alt="KAL Logo"
-              />
-            </div>
-            </div>
-            <div class="exp-txt-cont">
-                <ul>
-                  <li>
-                    Acquired knowledge about powertrain, battery pack, and electric motor.
-                  </li>
-                  <li>
-                     Familiarity with EDM and CNC machines and their applications in manufacturing
-                  </li>
-                  <li>
-                    Familiarity with different fabrication machines used in the automotive industry
-                  </li>
-                </ul>    
-              
-            </div>
-            
-          </div>
-          
-          <div class="drop-down"><img class="toggle-img"  src="drop_down.png"></div>
         </div>
       </section>
 
       <section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="project-card">
-      <h3>Mechanical Design</h3>
-      <p>
-        CAD modeling, structural design, and fixture development for engineering applications.
-      </p>
-      <button id="project-button" onclick="openPopup()">View Project</button>
-    </div>
-    
-    <div class="project-card">
-      <h3>Robotics</h3>
-      <p>
-        Robotics design, and automation solutions .
-      </p>
-      <button id="project-button" onclick="openPopup()">View Project</button>
-    </div>
-  </div>
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="project-card">
+            <h3>Boston Spot Robot - Solidworks</h3>
+            <p>
+              CAD modeling of Boston Dynamics Spot Robot using Solidworks,
+              focusing on mechanical design and assembly.
+            </p>
+            <button id="project-button" onclick="openPopup('bostonspot')">
+              View Project
+            </button>
+          </div>
 
-  <div class="grid">
-    <div class="project-card">
-      <h3>Software</h3>
-      <p>
-        Automation scripts, workflow optimization, and simulation tool integration.
-      </p>
-      <button id="project-button" onclick="openPopup()">View Project</button>
-    </div>
-    <div class="project-card">
-      <h3>Coming Soon</h3>
-      <p>
-        Upcoming work in CFD, AI-driven design, and advanced robotics.
-      </p>
-    </div>
-  </div>
+          <div class="project-card">
+            <h3> Autonomous Mobile Robot Simulation | ROS2, Gazebo, RViz</h3>
+            <p></p>
+              Developed a simulation environment for an autonomous mobile robot
+              using ROS2, Gazebo, and RViz, focusing on navigation and obstacle
+              avoidance.
+            </p>
+            <button id="project-button" onclick="openPopup('mobilerobot')">
+              View Project
+            </button>
+          </div>
+        </div>
 
-<div id="projectWindow" class="popupWindow">
-  <div class="project">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <div class="project-content">
-      <h3>Software Projects</h3>
-      <p>
-        Currently, the detailed documentation for software projects is being compiled and will be available soon. Stay tuned for updates!
-      </p>
-    </div>
-  </div>
-</div>
+        <div class="grid">
+          <div class="project-card">
+            <h3>Software</h3>
+            <p>
+              Automation scripts, workflow optimization, and simulation tool
+              integration.
+            </p>
+            <button id="project-button" onclick="openPopup()">
+              View Project
+            </button>
+          </div>
+          <div class="project-card">
+            <h3>Coming Soon</h3>
+            <p>
+              Upcoming work in CFD, AI-driven design, and advanced robotics.
+            </p>
+          </div>
+        </div>
 
-</section>
+        <!-- Boston Spot Robot Project Popup -->
+        <div id="bostonspot" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('bostonspot')"
+            >&times;</span
+          >
+          <div class="project">
+            <div class="scroll-area">
+              <div class="project-content">
+                <h3>Boston Spot Robot - Solidworks</h3>
+                <img
+                  class="project-img"
+                  src="https://media.licdn.com/dms/image/v2/D562DAQHlr0M3gFAx5Q/profile-treasury-image-shrink_8192_8192/profile-treasury-image-shrink_8192_8192/0/1722236356532?e=1761469200&v=beta&t=jnpkTQqe77FRKe4mBWjzQsCCRdanRIrRXeyeDMp_qZs"
+                  alt=""
+                />
+                <p>
+                      In my recent project, I created a highly detailed model of the Spot Robot by Boston Dynamics using SolidWorks. By incorporating advanced mating conditions, I achieved a 16% improvement in the robot's motion, ensuring smooth and realistic movement. Additionally, I included complex design elements that enhanced the overall design quality by 40%, showcasing my expertise in mechanical engineering and industrial design. This project demonstrates my ability to apply innovative solutions to improve both functionality and aesthetics in robotic design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mobilerobot" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('mobilerobot')"
+            >&times;</span
+          >
+          <div class="project">
+            <div class="scroll-area">
+              <div class="project-content">
+                <h3>Autonomous Mobile Robot - ROS2, Gazebo, RViz</h3>
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361953301212356609?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post" class="project-img"></iframe>
+                <p>
+                  In this project, I developed a comprehensive simulation
+                  environment for an autonomous mobile robot using ROS2,
+                  Gazebo, and RViz. The focus was on implementing advanced
+                  navigation algorithms and obstacle avoidance techniques to
+                  ensure the robot could operate effectively in dynamic
+                  environments. By integrating these tools, I was able to create
+                  a realistic simulation that allowed for extensive testing and
+                  optimization of the robot's performance, demonstrating my
+                  skills in robotics and software development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="skills">
-  <h2>Skills</h2>
-  <ul class="skills-list">
-    <li><img width="128" height="128" src="https://img.icons8.com/color/128/python--v1.png" alt="python--v1"/><h4>Python</h4></li>
-    <li><img width="128" height="128" src="https://img.icons8.com/color/128/solidworks.png" alt="solidworks"/> <h4>SolidWorks</h4></li>
-    <li><img width="128"  src="https://companieslogo.com/img/orig/ANSS-afc9cd74.png?t=1720244490" alt="ANSYS Logo"> <h4>ANSYS</h4></li>
-    <li><img width="128" src="https://cdn.worldvectorlogo.com/logos/matlab.svg" alt="MATLAB Logo"> <h4>MATLAB</h4></li>
-    <li><img width="128"  src="https://usoftly.ir/wp-content/uploads/2025/01/MSC-Nastran.png" alt="Nastran Logo"><h4>Nastran</h4></li>
-    <li><img width="128" src="https://media.imgcdn.org/repo/2023/03/msc-patran/MSC-Patran.png" alt="Patran Logo"><h4>Patran</h4></li>
-    <li><img width="128" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++ Logo"><h4>C++</h4></li>
-    <li><img width="128" src="https://avatars.githubusercontent.com/u/3979232?s=200&v=4" alt="ROS2 Logo"><h4>ROS2</h4></li>
-    <li><img width="128" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Gazebo_logo_without_text.svg" alt="Gazebo logo"><h4>Gazebo</h4></li>
- 
-  </ul>
-</section>
-
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>
+            <img
+              width="128"
+              height="128"
+              src="https://img.icons8.com/color/128/python--v1.png"
+              alt="python--v1"
+            />
+            <h4>Python</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              height="128"
+              src="https://img.icons8.com/color/128/solidworks.png"
+              alt="solidworks"
+            />
+            <h4>SolidWorks</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://companieslogo.com/img/orig/ANSS-afc9cd74.png?t=1720244490"
+              alt="ANSYS Logo"
+            />
+            <h4>ANSYS</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://cdn.worldvectorlogo.com/logos/matlab.svg"
+              alt="MATLAB Logo"
+            />
+            <h4>MATLAB</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://usoftly.ir/wp-content/uploads/2025/01/MSC-Nastran.png"
+              alt="Nastran Logo"
+            />
+            <h4>Nastran</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://media.imgcdn.org/repo/2023/03/msc-patran/MSC-Patran.png"
+              alt="Patran Logo"
+            />
+            <h4>Patran</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+              alt="C++ Logo"
+            />
+            <h4>C++</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://avatars.githubusercontent.com/u/3979232?s=200&v=4"
+              alt="ROS2 Logo"
+            />
+            <h4>ROS2</h4>
+          </li>
+          <li>
+            <img
+              width="128"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Gazebo_logo_without_text.svg"
+              alt="Gazebo logo"
+            />
+            <h4>Gazebo</h4>
+          </li>
+        </ul>
+      </section>
       <section id="education">
         <h2>Education</h2>
         <div class="card">
@@ -263,12 +425,17 @@
         <form id="enquiryForm">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
           <button type="submit">Send Enquiry</button>
         </form>
-
-        
-        <p id="formMsg" style="display:none; font-weight:bold; margin-top:1rem;"></p>
+        <p
+          id="formMsg"
+          style="display: none; font-weight: bold; margin-top: 1rem"
+        ></p>
 
         <div class="socials">
           <a href="https://linkedin.com/in/gokulgs7">LinkedIn</a>
