@@ -186,14 +186,15 @@
       <p>
         CAD modeling, structural design, and fixture development for engineering applications.
       </p>
-      <a href="Projects/MechanicalProject/mechanical_project.html">View Project</a>
+      <button id="project-button" onclick="openPopup()">View Project</button>
     </div>
+    
     <div class="project-card">
       <h3>Robotics</h3>
       <p>
         Robotics design, and automation solutions .
       </p>
-      <a href="/Projects/RoboticsProject/robotics_project.html">View Project</a>
+      <button id="project-button" onclick="openPopup()">View Project</button>
     </div>
   </div>
 
@@ -203,7 +204,7 @@
       <p>
         Automation scripts, workflow optimization, and simulation tool integration.
       </p>
-      <a href="#">View Project</a>
+      <button id="project-button" onclick="openPopup()">View Project</button>
     </div>
     <div class="project-card">
       <h3>Coming Soon</h3>
@@ -212,6 +213,19 @@
       </p>
     </div>
   </div>
+
+<div id="projectWindow" class="popupWindow">
+  <div class="project">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <div class="project-content">
+      <h3>Software Projects</h3>
+      <p>
+        Currently, the detailed documentation for software projects is being compiled and will be available soon. Stay tuned for updates!
+      </p>
+    </div>
+  </div>
+</div>
+
 </section>
 
     <section id="skills">

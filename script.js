@@ -91,3 +91,13 @@ document.querySelectorAll(".drop-down").forEach((btn) => {
       msg.style.justifyContent = "center";
     });
   });
+
+
+ function openPopup() {
+      document.getElementById('projectWindow').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closePopup() {
+      document.getElementById('projectWindow').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
