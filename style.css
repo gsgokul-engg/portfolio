@@ -472,8 +472,12 @@ footer {
 
   .card-container {
     flex-direction: column;
-    align-items: flex-start;
+
   }
+  .card h3 {
+   white-space: normal;
+   font-size: 1.3rem;
+}
 
   .company-image {
     margin-top: 1rem;
@@ -538,7 +542,7 @@ footer {
   }
 
   section h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .card {
@@ -546,7 +550,18 @@ footer {
   }
   .card h3 {
    text-wrap: wrap;
-}
+   font-size: 1rem;
+  }
+  .card span {
+    font-size: 0.8rem;
+    text-overflow: wrap;
+  } 
+  .card .gpa{
+    font-size: 0.8rem;
+  }
+  .project-card h3{
+    font-size: 1.2rem;
+  }
 
 
   .skills-list {
