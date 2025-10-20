@@ -90,6 +90,12 @@ nav ul li a:hover {
   color: #6a82ef;
 }
 
+#about{
+  gap: 1.5rem;
+}
+#about p{
+  text-align: justify;
+}
 
 header {
   display: flex;
