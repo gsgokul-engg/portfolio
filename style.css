@@ -320,8 +320,15 @@ section p{
 
 #education .grid {
   display: grid;
+  gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
+  margin: 1rem 0;
+}
+.project grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin: 1rem 0;
 }
 .project-card {
@@ -562,6 +569,14 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
 }
+@media (max-width: 1200px) {
+   .card h3 {
+   text-wrap: wrap;
+   font-size: 1.2rem;
+  }
+}
+
+
 
 @media (max-width: 992px) {
   nav {
@@ -635,12 +650,13 @@ footer {
 @media (max-width: 600px) {
   nav {
     padding: 1rem;
+   
   }
 
   nav ul {
     flex-direction: column;
     gap: 0.8rem;
-    
+    margin-top: 0.8rem;
 
   }
 
