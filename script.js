@@ -18,6 +18,7 @@ document.querySelectorAll(".drop-down").forEach((toggle) => {
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
     hamburger.classList.toggle("open");
+    
 
   });
 

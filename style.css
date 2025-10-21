@@ -186,7 +186,7 @@ section p{
 
 #about {
   text-align: center;
-  max-width: 1200px;
+  max-width: 1276px;
   margin: auto;
   font-size: 1.1rem;
   color: #555;
@@ -331,7 +331,15 @@ section p{
 
   margin: 1rem 0;
 }
-.project grid{
+#certifications .grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  margin: 1rem 0;
+}
+
+.project .grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -440,7 +448,7 @@ section p{
   margin-bottom: 1rem;
 }
 
-#project-button {
+#view-button {
 
   bottom: 15px;                       
   left: 15px;                      
@@ -476,6 +484,32 @@ section p{
 
 .close-btn:hover {
   color: #ff0202;
+}
+.education {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  overflow-y: auto;
+
+
+}
+
+.education-content {
+  font-size: 1.5rem;
+  text-align: left;
+
+}
+.certificate-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 1rem auto 1rem auto; 
+  display: block; 
 }
 
 
@@ -600,7 +634,7 @@ footer {
   }
 
   #hero_right img {
-    width: 250px;
+    width: 320px;
   }
 
   section {
@@ -622,7 +656,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   nav{
     display: flex;
     justify-content: space-between;
@@ -651,6 +685,7 @@ footer {
   
    
   }
+  
 }
 
 
