@@ -446,10 +446,10 @@ section p{
   margin-bottom: 1rem;
 }
 
-#view-button {
-  position: absolute;           
-  bottom: 10%;
-  left: 1.5rem;       
+#view-button {    
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
@@ -495,7 +495,6 @@ section p{
   overflow-y: auto;
 
 
-
 }
 
 .education-content {
@@ -517,7 +516,19 @@ section p{
    font-size: 1.3rem;
 }
 
+#education .card {
+  white-space: normal;
+  position: relative;                     
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+
 #certifications .card {
+  white-space: normal;
   position: relative;                     
   display: flex;
   flex-direction: column;
