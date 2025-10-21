@@ -687,44 +687,86 @@
               View Certificate
             </button>
           </div>
+
           <div class="card">
             <h3>High-School</h3>
             <span>NSS Public School, 2017 - 2019</span>
             <p class="gpa">CGPA - 7.6</p>
-            
           </div>
         </div>
+
         <!-- Academic Certifications -->
         <div id="btech" class="popupWindow">
-          <span class="close-btn" onclick="closePopup('btech')"
-            >&times;</span>
+          <span class="close-btn" onclick="closePopup('btech')">&times;</span>
           <div class="education">
-              <div class="education-content">
-                <h3>Bachelor of Technology - Mechanical Engineering</h3>
-                <div class="grid">
-                      <object class="certificate-img" data="Documents/Btech.pdf" type="application/pdf" width="400px" height="600px"> </object>
-                </div>
+            <div class="education-content">
+              <h3>Bachelor of Technology - Mechanical Engineering</h3>
+              <div class="grid">
+                <object
+                  class="certificate-img"
+                  data="Documents/Btech.pdf"
+                  type="application/pdf"
+                  width="400rem"
+                  height="580rem"
+                ></object>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Academic Certifications -->
-       
-        
       </section>
-      
+
       <section id="certifications">
         <h2>Certifications</h2>
         <div class="grid">
           <div class="card">
-            <h3>Certification Name</h3>
-            <span>Issuing Organization, Year</span>
+            <h3>Matlab On-Ramp</h3>
+            <span>MathWorks, 2025</span>
+            <button id="view-button" onclick="openPopup('c1')">
+              View Certificate
+            </button>
           </div>
           <div class="card">
-            <h3>Certification Name</h3>
-            <span>Issuing Organization, Year</span>
+            <h3>Simulink On-Ramp</h3>
+            <span>MathWorks, 2025</span>
+            <button id="view-button" onclick="openPopup('c2')">
+              View Certificate
+            </button>
           </div>
           <div class="card">
-            <h3>Certification Name</h3>
-            <span>Issuing Organization, Year</span>
+            <h3>Coming Soon</h3>
+          </div>
+        </div>
+        <!-- Non-Academic Certifications -->
+
+        <div id="c1" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('c1')">&times;</span>
+          <div class="education">
+            <div class="education-content">
+              <h3>Matlab On-Ramp - MathWorks</h3>
+              <div class="grid">
+                <img
+                  class="project-img"
+                  src="images/c1.png"
+                  alt="Matlab On-Ramp Certificate"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="c2" class="popupWindow">
+          <span class="close-btn" onclick="closePopup('c2')">&times;</span>
+          <div class="education">
+            <div class="education-content">
+              <h3>Simulink On-Ramp - MathWorks</h3>
+              <div class="grid">
+                <img
+                  class="project-img"
+                  src="images/c2.png"
+                  alt="Simulink On-Ramp Certificate"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
