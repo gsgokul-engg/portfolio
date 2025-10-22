@@ -101,7 +101,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 10rem;
+  padding: 1rem 10rem;
   gap: 5rem;
   flex-wrap: wrap;
 }
