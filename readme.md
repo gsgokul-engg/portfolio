@@ -31,8 +31,3 @@ This website highlights my professional background, technical expertise, and pro
 
 ---
 
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/portfolio.git
