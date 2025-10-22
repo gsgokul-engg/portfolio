@@ -516,6 +516,11 @@ section p{
    font-size: 1.3rem;
 }
 
+#certifications .card span {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
 #education .card {
   position: relative;
   background: #fff;
