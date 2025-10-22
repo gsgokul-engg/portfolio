@@ -517,24 +517,29 @@ section p{
 }
 
 #education .card {
-  white-space: normal;
-  position: relative;                     
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem 1.8rem 4rem 1.8rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
-  padding-bottom: 40px;
+  height: auto;
 }
 
-
 #certifications .card {
-  white-space: normal;
-  position: relative;                     
+ position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem 1.8rem 4rem 1.8rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
-  padding-bottom: 50px;
+  height: auto;
 }
 
 
@@ -749,14 +754,14 @@ footer {
   }
   .card h3 {
    text-wrap: wrap;
-   font-size: 1rem;
+   font-size: 1.1rem;
   }
   .card span {
-    font-size: 0.8rem;
-    text-overflow: wrap;
+    font-size: 0.9rem;
+    white-space: normal;
   } 
   .card .gpa{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .project-card h3{
     font-size: 1.1rem;
@@ -764,8 +769,14 @@ footer {
   .project-card p{
     font-size: 0.9rem;
   }
+  #education .card h3 {
+   font-size: 1.1rem;
 
+  }
+  #certifications .card h3 {
+   font-size: 1.1rem;
 
+  }
   .skills-list {
     gap: 0.5rem;
   }
