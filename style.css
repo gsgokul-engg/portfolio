@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   width: 100%;
   position: sticky;
   top: 0;
@@ -42,7 +42,11 @@ nav a{
   text-decoration: none;
   color: inherit;
 }
-
+#logo{
+  position: relative;
+  top: 0.1rem;
+  width: 80px;
+}
 .hamburger {
   display: none;
   flex-direction: column;
