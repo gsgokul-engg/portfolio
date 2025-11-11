@@ -733,6 +733,9 @@ footer {
     padding: 1rem;
    
   }
+  #logo{
+    width: 60px;
+  }
 
   nav ul {
     flex-direction: column;
