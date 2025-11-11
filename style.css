@@ -730,17 +730,17 @@ footer {
 
 @media (max-width: 600px) {
   nav {
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
    
   }
   #logo{
-    width: 40px;
+    width: 50px;
   }
 
   nav ul {
     flex-direction: column;
     gap: 0.8rem;
-    margin-top: 0.8rem;
+    margin-top: -0.3rem;
 
   }
 
