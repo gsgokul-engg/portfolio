@@ -23,7 +23,6 @@ document.querySelectorAll(".drop-down").forEach((toggle) => {
   });
 
 
-
 document.querySelectorAll(".drop-down").forEach((btn) => {
   btn.addEventListener("click", () => {
     const card = btn.closest(".card");
@@ -58,7 +57,16 @@ document.querySelectorAll(".drop-down").forEach((btn) => {
   });
 });
 
-
+document.querySelectorAll(".project-img").forEach(img => {
+    img.onload = () => {
+      console.log(img.naturalWidth, img.naturalHeight);
+        if (img.naturalHeight > img.naturalWidth) {
+            img.classList.add("portrait");
+        } else {
+            img.classList.add("landscape");
+        }
+    };
+});
 
  const form = document.getElementById("enquiryForm");
   const msg = document.getElementById("formMsg");

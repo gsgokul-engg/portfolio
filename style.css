@@ -425,12 +425,40 @@ section p{
   text-align: left;
 
 }
+
+.cert-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem auto; 
+  display: block; 
+  object-fit: contain;
+
+  
+}
+
 .project-img {
   width: 100%;
   max-width: 800px;
   border-radius: 10px;
-  margin: 1.5rem auto 1.5rem auto; 
+  margin: 1.5rem auto ; 
   display: block; 
+  object-fit: cover;
+  
+}
+
+
+.project-img.portrait {
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+.project-img.landscape {
+  width: 100%;
+  height: auto;
 }
 .project-para {
   width: 90%;           
