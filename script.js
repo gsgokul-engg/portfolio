@@ -106,7 +106,7 @@ const form = document.getElementById("enquiryForm");
     }
 
 const elements = document.querySelectorAll(
-  "#experience > .grid, #experience > h2, #education > .grid, #education > h2, #certifications > .grid, #certifications > h2, #projects > .grid, #projects > h2"
+  "#experience > h2, #experience > .card, #education > .grid, #education > h2, #certifications > .grid, #certifications > h2, #projects > .grid, #projects > h2"
 );
 
 const observer = new IntersectionObserver((entries) => {
