@@ -293,7 +293,7 @@ section p{
   align-items: flex-start;
   gap: 1rem; 
   margin-bottom: 12px;
-  text-wrap: wrap;
+  white-space: normal;
 }
 
 
@@ -415,8 +415,8 @@ section p{
 
 .scroll-area {
   height: 100%;
-  padding: 20px;
   overflow-y: auto;
+  position: absolute;
   box-sizing: border-box;
 }
 
@@ -478,7 +478,7 @@ section p{
   margin-bottom: 1rem;
 }
 
-#view-button {    
+.view-button {    
   position: absolute;
   bottom: 1rem;
   left: 1.5rem;
@@ -687,7 +687,7 @@ footer {
 }
 @media (max-width: 1200px) {
    .card h3 {
-   text-wrap: wrap;
+   white-space: normal;
    font-size: 1.2rem;
   }
 }
@@ -807,7 +807,7 @@ footer {
     padding: 1rem;
   }
   .card h3 {
-   text-wrap: wrap;
+   white-space: normal;
    font-size: 1.1rem;
   }
   .card span {

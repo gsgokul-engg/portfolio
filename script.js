@@ -1,18 +1,5 @@
-document.querySelectorAll(".drop-down").forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    const textContainer = toggle.closest(".card").querySelector(".exp-txt-cont");
-    const icon = toggle.querySelector("img");
-
-    
-    textContainer.classList.toggle("expanded");
-
-    icon.classList.toggle("rotate");
-  });
-});
-
-
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector("nav ul");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector("nav ul");
  
 
   hamburger.addEventListener("click", () => {
@@ -58,17 +45,22 @@ document.querySelectorAll(".drop-down").forEach((btn) => {
 });
 
 document.querySelectorAll(".project-img").forEach(img => {
-    img.onload = () => {
-      console.log(img.naturalWidth, img.naturalHeight);
-        if (img.naturalHeight > img.naturalWidth) {
-            img.classList.add("portrait");
-        } else {
-            img.classList.add("landscape");
-        }
+    const applyOrientationClass = () => {
+      if (img.naturalHeight > img.naturalWidth) {
+        img.classList.add("portrait");
+      } else {
+        img.classList.add("landscape");
+      }
     };
+
+    if (img.complete) {
+      applyOrientationClass();
+    } else {
+      img.onload = applyOrientationClass;
+    }
 });
 
- const form = document.getElementById("enquiryForm");
+const form = document.getElementById("enquiryForm");
   const msg = document.getElementById("formMsg");
 
   form.addEventListener("submit", function(event) {
@@ -113,11 +105,12 @@ document.querySelectorAll(".project-img").forEach(img => {
       document.body.style.overflow = 'auto';
     }
 
-const elements = document.querySelectorAll("#projects, #experience","#education","#certifications");
+const elements = document.querySelectorAll(
+  "#experience > .grid, #experience > h2, #education > .grid, #education > h2, #certifications > .grid, #certifications > h2, #projects > .grid, #projects > h2"
+);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
       entry.target.style.transform = "translateY(0)";
@@ -125,7 +118,6 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.style.opacity = 0;
       entry.target.style.transform = "translateY(40px)";
     }
-
   });
 }, {
   threshold: 0.2
@@ -138,21 +130,17 @@ elements.forEach(el => {
   observer.observe(el);
 });
 
-
 const skills = document.querySelectorAll(".skill-item");
 
 const skillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-
       const items = entry.target.querySelectorAll(".skill-item");
-
       items.forEach((item, index) => {
         setTimeout(() => {
           item.classList.add("show");
         }, index * 100); // delay between each item
       });
-
     } else {
       const items = entry.target.querySelectorAll(".skill-item");
       items.forEach(item => item.classList.remove("show"));
