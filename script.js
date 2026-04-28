@@ -112,3 +112,52 @@ document.querySelectorAll(".project-img").forEach(img => {
       document.getElementById(id).style.display = 'none';
       document.body.style.overflow = 'auto';
     }
+
+const elements = document.querySelectorAll("#projects, #experience","#education","#certifications");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    } else {
+      entry.target.style.opacity = 0;
+      entry.target.style.transform = "translateY(40px)";
+    }
+
+  });
+}, {
+  threshold: 0.2
+});
+
+elements.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(40px)";
+  el.style.transition = "0.8s ease"; 
+  observer.observe(el);
+});
+
+
+const skills = document.querySelectorAll(".skill-item");
+
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      const items = entry.target.querySelectorAll(".skill-item");
+
+      items.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("show");
+        }, index * 100); // delay between each item
+      });
+
+    } else {
+      const items = entry.target.querySelectorAll(".skill-item");
+      items.forEach(item => item.classList.remove("show"));
+    }
+  });
+}, { threshold: 0.2 });
+
+skillObserver.observe(document.querySelector("#skills"));
